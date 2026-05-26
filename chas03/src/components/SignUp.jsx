@@ -34,7 +34,7 @@ export const SignUp = () => {
                         required
                         value={firstName} // what var
                         onChange={(e) => setFirstName(e.target.value)} // assign value to var
-                    /><br/>
+                    /><br/><br/>
 
                     <label>Last Name:</label>
                     <input 
@@ -42,7 +42,7 @@ export const SignUp = () => {
                         required
                         value={lastName}
                         onChange={(e) => setLastName(e.target.value)}
-                    /><br/>
+                    /><br/><br/>
 
                     <label>Age:</label>
                     <input
@@ -50,7 +50,7 @@ export const SignUp = () => {
                         required
                         value={age}
                         onChange={(e) => setAge(e.target.value)}
-                    /><br/>
+                    /><br/><br/>
 
                     <label>Email:</label>
                     <input
@@ -58,7 +58,7 @@ export const SignUp = () => {
                         required
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                    /><br/>
+                    /><br/><br/>
                 
                     <label>Password:</label>
                     <input
@@ -66,7 +66,7 @@ export const SignUp = () => {
                         required
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
-                    /><br/>
+                    /><br/><br/>
 
                     <button onClick={toggleForm}>Submit</button>
                 </form>
