@@ -12,12 +12,6 @@ export const SignUp = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
-    // Function to change the state of the Form: turn F -> T and vice versa
-    function toggleForm(e) { // e = event object (for preventDefault())
-        e.preventDefault(); // cancel's the browsers default behavior for a specific event: clicking a link - prevents navigation otherwise React breaks
-        setShowTable(prev => !prev); // take previous value (currently given to it) and flip it
-    }
-
     // Logic Here:
     // Conditional rendering: if showTable === false, show form, 
     // if true, show table
@@ -68,7 +62,9 @@ export const SignUp = () => {
                         onChange={(e) => setPassword(e.target.value)}
                     /><br/><br/>
 
-                    <button onClick={toggleForm}>Submit</button>
+                    <button onClick={() => {setShowTable(!showTable)}}>
+                        {showTable ? "Hide Form" : "Show Table"} 
+                    </button>
                 </form>
             }
 
