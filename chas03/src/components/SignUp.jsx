@@ -63,7 +63,7 @@ export const SignUp = () => {
                     /><br/><br/>
 
                     <button onClick={() => {setShowTable(!showTable)}}>
-                        {showTable ? "Hide Form" : "Show Table"} 
+                        {showTable ? "Hide Form" : "Show Table"}
                     </button>
                 </form>
             }
