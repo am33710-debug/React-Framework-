@@ -20,7 +20,7 @@ export function App() {
 
   useEffect(() => {
     setTimeout(() => {getPosts()}, 1000)
-  }, []) // every 1s check for new Posts, and if componentDidMount - []
+  }, []) // wait 1s then load the posts in the console, and if componentDidMount - []
 
   return(
     <div id="app">
